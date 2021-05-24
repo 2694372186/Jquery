@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本选择器</title>
+</head>
+<body>
+    <button>按钮</button>
+    <br>
+    <div class="parent">
+        parent
+        <div class="subclass">
+            sunclass
+            <div class="unborn" id="unborn">
+                unborn
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $('button').css('background','red');
+    $('#unborn').css('background','blue');
+    $('.subclass').css('background','green');
+    $('.parent').css('background','grey');
+    $('button,.unborn').css('font-size','40px');
+    $('.unborn#unborn').css('font-size','100px');
+</script>
+</html>
